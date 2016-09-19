@@ -34,6 +34,10 @@ function ShoppingListController(ShoppingList) {
     {
       name: "Chocolate",
       quantity: "5"
+    },
+    {
+      name: "Cachaça",
+      quantity: "200"
     }
   ];
 
