@@ -1,0 +1,16 @@
+<ul class="found-list">
+    <li class="row found-item" ng-repeat="item in narrow.found">
+        <div class="col-sm-9">
+            <p><span class="bold">Name: </span>{{ item.name }}<p>
+            <p><span class="bold">Short name: </span>{{ item.short_name }}<p>
+            <p><span class="bold">Description: </span>{{ item.description }}<p>
+        </div>
+        <div class="col-sm-3">
+            <div class="form-group">
+                <button class="btn btn-primary"
+                        ng-click="narrow.onRemove({index: $index});">Don't want this one!</button>
+            </div>
+        </div>
+    </li>
+</ul>
+<div class="error" ng-if="narrow.isEmpty()">Nothing found</div>
