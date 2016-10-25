@@ -1,0 +1,13 @@
+<div class="container" ng-if="infoCtrl.info.firstname">
+  <h2 id="menu-categories-title" class="text-center">Hello {{infoCtrl.info.firstname}} {{infoCtrl.info.lastname}}</h2>
+  <div class="row">
+    <span>Your email: </span>{{infoCtrl.info.email}}<br>
+    <span>Your phone number: </span>{{infoCtrl.info.phone}}<br><br>
+    <span ng-if="infoCtrl.info.menuItem">Your favorite item</span>
+    <span ng-if="!infoCtrl.info.menuItem">Favorite menu item not found</span>
+  </div>
+  <menu-item ng-if="infoCtrl.info.menuItem" menu-item="infoCtrl.info.menuItem"></menu-item>
+</div>
+<div class="container" ng-if="!infoCtrl.info.firstname">
+  <h2 class="text-center">Not signed up yet. <a ui-sref="public.register">Sign up now!</a></h2>
+</div>
