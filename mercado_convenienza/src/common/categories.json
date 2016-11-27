@@ -1,0 +1,9 @@
+[{"id":1,"short_name":"L","name":"Legumes e Verduras","url":"https://klauvi.herokuapp.com/categories/L.json"},
+ {"id":2,"short_name":"C","name":"Aves, Carnes e Pescado","url":"https://klauvi.herokuapp.com/categories/V.json"},
+ {"id":3,"short_name":"B","name":"Bebidas sem Alcool","url":"https://klauvi.herokuapp.com/categories/L.json"},
+ {"id":4,"short_name":"V","name":"Vinhos","url":"https://klauvi.herokuapp.com/categories/L.json"},
+ {"id":5,"short_name":"B","name":"Congelados","url":"https://klauvi.herokuapp.com/categories/L.json"},
+ {"id":6,"short_name":"V","name":"Laticíneos, Ovos e Refrigerados","url":"https://klauvi.herokuapp.com/categories/L.json"},
+ {"id":7,"short_name":"B","name":"Cereais","url":"https://klauvi.herokuapp.com/categories/L.json"},
+ {"id":8,"short_name":"V","name":"Padaria","url":"https://klauvi.herokuapp.com/categories/L.json"}
+]
