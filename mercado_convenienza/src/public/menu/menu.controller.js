@@ -15,7 +15,5 @@ function MenuController(menuCategories, $rootScope) {
 
 }
 
-$('#datetimepicker1').datetimepicker();
-
 
 })();
