@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
-  color: white;
-  background-color: #517747;
+    color: #133a06;
+    background-color: #fbfbfb;
   font-family: 'Oxygen', sans-serif;
 }
 
@@ -93,6 +93,7 @@ body {
   padding-top: 35px;
   padding-bottom: 30px;
   background-color: #222;
+  color:white;
   border-top: 0;
 }
 .panel-footer div.row {

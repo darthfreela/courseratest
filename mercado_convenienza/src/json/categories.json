@@ -43,7 +43,7 @@
  {"id":6,
   "name":"Cereais",
   "products":[
-		{"name":"Aveia em Flocos 500g","img_path":"17.jpg","price":"4.95"},
+		{"name":"Aveia Flocos 500g","img_path":"17.jpg","price":"4.95"},
 		{"name":"Sucrilhos 25g","img_path":"18.jpg","price":"1.49"},
 		{"name":"Nesfit Mel 300g","img_path":"19.jpg","price":"10.19"}
 	]
@@ -51,8 +51,8 @@
  {"id":7,
   "name":"Produtos de Limpeza",
   "products":[
-		{"name":"Mr. Musculo Marine 38g","img_path":"20.jpg","price":"21.9"},
-		{"name":"Jimo Ácaros e Pulgas","img_path":"21.jpg","price":"22.89"},
+		{"name":"Mr. Musculo 38g","img_path":"20.jpg","price":"21.9"},
+		{"name":"Jimo Ácaros","img_path":"21.jpg","price":"22.89"},
 		{"name":"SBP","img_path":"22.jpg","price":"14.95"}
 	]
  }
