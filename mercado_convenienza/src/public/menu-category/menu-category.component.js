@@ -6,7 +6,6 @@ angular.module('public')
   templateUrl: 'src/public/menu-category/menu-category.html',
   bindings: {
     category: '<',
-    valor_total: '<'
   }
 })
 
