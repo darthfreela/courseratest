@@ -20,16 +20,16 @@
   "name":"Bebidas sem Alcool",
   "products":[
 		{"name":"Coca-Cola Lata","img_path":"coca-cola.png","price":"1.5"},
-		{"name":"Coca-Cola Zero 2L","img_path":"09.jpg","price":"2.5"},
-		{"name":"Guaraná Antartica Lata","img_path":"10.jpg","price":"1.5"},
+		{"name":"Coca Zero 2L","img_path":"09.jpg","price":"2.5"},
+		{"name":"Coca Uva","img_path":"10.jpg","price":"1.5"},
 		{"name":"Pepsi Cola 2L","img_path":"11.jpg","price":"2.5"}
 	]
  },
  {"id":4,
   "name":"Vinhos",
   "products":[
-		{"name":"Casa Valduga Seco 750ml Tinto","img_path":"12.jpg","price":"39.4"},
-		{"name":"Casa Gallioto Seco 750ml Branco","img_path":"13.jpg","price":"39.4"}
+		{"name":"Casa Valduga 750ml","img_path":"12.jpg","price":"39.4"},
+		{"name":"Casa Gallioto 750ml","img_path":"13.jpg","price":"39.4"}
 	]
  },
  {"id":5,
