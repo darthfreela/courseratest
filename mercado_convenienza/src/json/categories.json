@@ -1,7 +1,7 @@
 [{"id":1,
   "name":"Legumes e Verduras",
   "products":[
-		{"name":"Tomate","img_path":"01.jpg","price":"5.4"},
+		{"name":"Tomate","img_path":"01.jpg","price":"1.4"},
 		{"name":"Alfaçe","img_path":"02.jpg","price":"0.4"},
 		{"name":"Batata","img_path":"03.jpg","price":"1.4"},
 		{"name":"Pimentão","img_path":"04.jpg","price":"0.6"}
