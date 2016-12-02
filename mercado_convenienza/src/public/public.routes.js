@@ -13,11 +13,11 @@ function routeConfig ($stateProvider) {
   $stateProvider
     .state('public', {
       absract: true,
-      templateUrl: 'src/public/public.html'
+      templateUrl: 'http://darthfreela.github.io/courseratest/mercado_convenienza/src/public/public.html'
     })
     .state('public.home', {
       url: '/',
-      templateUrl: 'src/public/home/home.html',
+      templateUrl: 'http://darthfreela.github.io/courseratest/mercado_convenienza/src/public/home/home.html',
       controller: 'MenuController',
       controllerAs: 'menuCtrl',
       bindings: {
@@ -31,7 +31,7 @@ function routeConfig ($stateProvider) {
     })
     .state('public.menuitems', {
       url: '/menu/{category}',
-      templateUrl: 'src/public/menu-items/menu-items.html',
+      templateUrl: 'http://darthfreela.github.io/courseratest/mercado_convenienza/src/public/menu-items/menu-items.html',
       controller: 'MenuItemsController',
       controllerAs: 'menuItemsCtrl',
       resolve: {
@@ -42,7 +42,7 @@ function routeConfig ($stateProvider) {
     })
     .state('public.info', {
       url: '/my-info',
-      templateUrl: 'src/public/my-info/my-info.html',
+      templateUrl: 'http://darthfreela.github.io/courseratest/mercado_convenienza/src/public/my-info/my-info.html',
       controller: 'InfoController',
       controllerAs: 'infoCtrl',
       resolve: {
@@ -53,7 +53,7 @@ function routeConfig ($stateProvider) {
     })
     .state('public.register', {
       url: '/sign-up',
-      templateUrl: 'src/public/sign-up/sign-up.html',
+      templateUrl: 'http://darthfreela.github.io/courseratest/mercado_convenienza/src/public/sign-up/sign-up.html',
       controller: 'RegisterController',
       controllerAs: 'regCtrl'
     });
