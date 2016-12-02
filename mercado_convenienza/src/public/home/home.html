@@ -26,19 +26,18 @@
               <div class="radio">
                 <label>
                   <input type="radio" name="survey" id="Radios1" value="Yes">
-                  <img class="img_pagmento" src="/images/menu/boleto.png">
+                  <img class="img_pagmento" src="http://darthfreela.github.io/courseratest/mercado_convenienza/images/menu/boleto.png">
                 </label>
               </div>
               <div class="radio">
                 <label>
                   <input type="radio" name="survey" id="Radios2" value="No">
-                  <img class="img_pagmento" src="/images/menu/visa-master.png">
+                  <img class="img_pagmento" src="http://darthfreela.github.io/courseratest/mercado_convenienza/images/menu/visa-master.png">
                 </label>
               </div>
               <div class="radio">
                 <label>
-                  <input type="radio" name="survey" id="Radios3" value="Notsure" disabled>
-                  Not sure
+                  <button type="button" class="btn btn-success" data-dismiss="modal">Efetuar pagamento</button>
                 </label>
               </div>
             </div>
@@ -100,7 +99,7 @@
         <div data-ng-repeat="$i in menuCategory.products">
           <a  ng-click="menuCategory.nome = $i.name; menuCategory.price = $i.price; menuCategory.img_path = $i.img_path; menuCategory.quantidade=0; menuCategory.valor = 0" href="#" data-toggle="modal" data-target="#myModal">
             <div class="item_container" >
-              <img class="menu_item" src="/images/menu/{{$i.img_path}}" />
+              <img class="menu_item" src="http://darthfreela.github.io/courseratest/mercado_convenienza/images/menu/{{$i.img_path}}" />
             </br>
             <span>R${{$i.price}}</span>
           </br>
@@ -122,7 +121,7 @@
           </div>
           <div class="modal-body" style="color: black">
             <center>
-              <img class="modal_img" src="/images/menu/{{menuCategory.img_path}}" />
+              <img class="modal_img" src="http://darthfreela.github.io/courseratest/mercado_convenienza/images/menu/{{menuCategory.img_path}}" />
               <div id="malditos_botoes" class="btn-group input-group col-lg-4 " role="group" aria-label="Default button group">
                 <button ng-click="menuCategory.quantidade = menuCategory.quantidade-1; menuCategory.valor = (menuCategory.price * menuCategory.quantidade)" type="button" class="btn btn-default">-</button> 
                 <input type="text" class="form-control meio" value="{{menuCategory.quantidade}}"/> 
@@ -133,7 +132,7 @@
           </div>
           <div class="modal-footer">
 
-            <button id="btn_modal" ng-click = "menuCtrl.valor_total += 500;" type="button" class="btn btn-success" data-dismiss="modal">Comprar</button>
+            <button id="btn_modal" ng-click = "menuCtrl.valor_total = menuCtrl.valor_total + menuCategory.valor;" type="button" class="btn btn-success" data-dismiss="modal">Comprar</button>
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
         </div>

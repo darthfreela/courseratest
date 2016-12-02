@@ -4,6 +4,14 @@
   border: 2px solid #072f03;
 }
 
+a {
+    color: #fdfdfd;
+  }
+
+ a:hover {
+    color: white;
+  } 
+  
 .navbar-header{
   height: 5em;
 }
