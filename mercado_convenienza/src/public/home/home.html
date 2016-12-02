@@ -22,7 +22,7 @@
         <ul id="nav-list" class="nav navbar-nav navbar-right">
           <li id="navMenuButton" ui-sref-active="active">
             <div class="conteudo_pg">
-              <STRONG>Valor Total:</STRONG> R$ {{menuCtrl.valor_total}}<br>
+              <STRONG>Valor Total:</STRONG> R$ {{menuCtrl.valor_total | number: 2}}<br>
               <div class="radio">
                 <label>
                   <input type="radio" name="survey" id="Radios1" value="Yes">
@@ -126,7 +126,7 @@
                 <button ng-click="menuCategory.quantidade = menuCategory.quantidade-1; menuCategory.valor = (menuCategory.price * menuCategory.quantidade)" type="button" class="btn btn-default">-</button> 
                 <input type="text" class="form-control meio" value="{{menuCategory.quantidade}}"/> 
                 <button ng-click="menuCategory.quantidade = menuCategory.quantidade+1; menuCategory.valor = (menuCategory.price * menuCategory.quantidade)" type="button" class="btn btn-default">+</button> 
-                <span id="valor_item">R${{menuCategory.valor}}</span>
+                <span id="valor_item">R${{menuCategory.valor | number: 2}}</span>
               </div>
             </center>
           </div>
