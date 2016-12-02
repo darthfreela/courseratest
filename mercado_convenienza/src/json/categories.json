@@ -20,39 +20,39 @@
   "name":"Bebidas sem Alcool",
   "products":[
 		{"name":"Coca-Cola Lata","img_path":"coca-cola.png","price":"1.5"},
-		{"name":"Coca-Cola Zero 2L","img_path":"09.png","price":"2.5"},
-		{"name":"Guaraná Antartica Lata","img_path":"10.png","price":"1.5"},
-		{"name":"Pepsi Cola 2L","img_path":"11.png","price":"2.5"}
+		{"name":"Coca-Cola Zero 2L","img_path":"09.jpeg","price":"2.5"},
+		{"name":"Guaraná Antartica Lata","img_path":"10.jpeg","price":"1.5"},
+		{"name":"Pepsi Cola 2L","img_path":"11.jpeg","price":"2.5"}
  },
  {"id":4,
   "name":"Vinhos",
   "products":[
-		{"name":"Casa Valduga Seco 750ml Tinto","img_path":"12.png","price":"39.4"},
-		{"name":"Casa Gallioto Seco 750ml Branco","img_path":"13.png","price":"39.4"},
+		{"name":"Casa Valduga Seco 750ml Tinto","img_path":"12.jpeg","price":"39.4"},
+		{"name":"Casa Gallioto Seco 750ml Branco","img_path":"13.jpeg","price":"39.4"}
 	]
  },
  {"id":5,
   "name":"Laticíneos, Ovos e Congelados",
   "products":[
-		{"name":"Fiambre","img_path":"14.png","price":"4.79"},
-		{"name":"Presunto","img_path":"15.png","price":"1.79"},
-		{"name":"Ovos 12 un","img_path":"16.png","price":"8.99"},
+		{"name":"Fiambre","img_path":"14.jpeg","price":"4.79"},
+		{"name":"Presunto","img_path":"15.jpeg","price":"1.79"},
+		{"name":"Ovos 12 un","img_path":"16.jpeg","price":"8.99"}
 	]
  },
  {"id":6,
   "name":"Cereais",
   "products":[
-		{"name":"Aveia em Flocos 500g","img_path":"17.png","price":"4.95"},
-		{"name":"Sucrilhos 25g","img_path":"18.png","price":"1.49"},
-		{"name":"Nesfit Mel 300g","img_path":"19.png","price":"10.19"},
+		{"name":"Aveia em Flocos 500g","img_path":"17.jpeg","price":"4.95"},
+		{"name":"Sucrilhos 25g","img_path":"18.jpeg","price":"1.49"},
+		{"name":"Nesfit Mel 300g","img_path":"19.jpeg","price":"10.19"}
 	]
  },
  {"id":7,
   "name":"Produtos de Limpeza",
   "products":[
-		{"name":"Mr. Musculo Marine 38g","img_path":"20.png","price":"21.9"},
-		{"name":"Jimo Ácaros e Pulgas","img_path":"21.png","price":"22.89"},
-		{"name":"SBP","img_path":"22.png","price":"14.95"},
+		{"name":"Mr. Musculo Marine 38g","img_path":"20.jpeg","price":"21.9"},
+		{"name":"Jimo Ácaros e Pulgas","img_path":"21.jpeg","price":"22.89"},
+		{"name":"SBP","img_path":"22.jpeg","price":"14.95"}
 	]
  }
 
