@@ -1,4 +1,11 @@
 <!-- Fixed position loading indicator -->
+<script type="text/javascript">
+  $(function() {
+    $('#datetimepicker1').datetimepicker({
+      language: 'pt-BR'
+    });
+  });
+</script>
 <loading class="loading-indicator"></loading>
 
 <header>
@@ -35,6 +42,17 @@
                   <img class="img_pagmento" src="http://darthfreela.github.io/courseratest/mercado_convenienza/images/menu/visa-master.png">
                 </label>
               </div>
+              <div>
+                <div class="well">
+                  <div id="datetimepicker1" class="input-append date">
+                    <input data-format="dd/MM/yyyy hh:mm:ss" type="text"></input>
+                    <span class="add-on">
+                      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+                      </i>
+                    </span>
+                  </div>
+                </div>
+              </div>
               <div class="radio">
                 <label>
                   <button type="button" class="btn btn-success" data-dismiss="modal">Efetuar pagamento</button>
@@ -49,9 +67,9 @@
 </header>
 
 <div id="call-btn" class="visible-xs">
-  <a class="btn" href="tel:410-602-5008">
-    <span class="glyphicon glyphicon-earphone"></span>
-    410-602-5008
+  <a class="btn" href="email:sac@mercatoconvenienza.com.br">
+    <span class="glyphicon glyphicon-send"></span>
+    SAC
   </a>
 </div>
 <!-- Modal -->
