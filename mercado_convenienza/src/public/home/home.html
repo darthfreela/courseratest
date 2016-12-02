@@ -1,23 +1,162 @@
+<!-- Fixed position loading indicator -->
+<loading class="loading-indicator"></loading>
+
+<header>
+  <nav id="header-nav" class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+
+        <div class="navbar-brand">
+          <a href="index.html"><h1>MERCATO CONVENIENZA</h1></a>
+          <p>
+          </p>
+        </div>
+
+        <a href="#" id="mini_cart" data-toggle="collapse" data-target="#collapsable-nav">
+          <span class="glyphicon glyphicon-shopping-cart"></span><br class="hidden-xs">
+        </a>
+
+      </div>
+
+      <div  id="collapsable-nav" class="collapse navbar-collapse">
+        <ul id="nav-list" class="nav navbar-nav navbar-right">
+          <li id="navMenuButton" ui-sref-active="active">
+            <div class="conteudo_pg">
+              <STRONG>Valor Total:</STRONG> R$ {{menuCtrl.valor_total}}<br>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="survey" id="Radios1" value="Yes">
+                  <img class="img_pagmento" src="/images/menu/boleto.png">
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="survey" id="Radios2" value="No">
+                  <img class="img_pagmento" src="/images/menu/visa-master.png">
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="survey" id="Radios3" value="Notsure" disabled>
+                  Not sure
+                </label>
+              </div>
+            </div>
+          </li>
+        </ul><!-- #nav-list -->
+      </div><!-- .collapse .navbar-collapse -->
+    </div><!-- .container -->
+  </nav><!-- #header-nav -->
+</header>
+
+<div id="call-btn" class="visible-xs">
+  <a class="btn" href="tel:410-602-5008">
+    <span class="glyphicon glyphicon-earphone"></span>
+    410-602-5008
+  </a>
+</div>
+<!-- Modal -->
+<div id="myModal2" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <center><h4 class="modal-title" style="color: black">Carrinho de Compras</center>
+      </div>
+      <div class="modal-body" style="color: black">
+        <center>
+        </center>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Comprar</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <div id="main-content" class="container">
   <div class="jumbotron">
     <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-responsive visible-xs">
   </div>
   <div id="home-tiles" class="row">
-    <div class="col-md-4 col-sm-6 col-xs-12">
-      <a ui-sref="public.menu"><div id="menu-tile"><span>Categorias</span></div></a>
-    </div>
-    <div class="col-md-4 col-sm-6 col-xs-12">
-      <a ui-sref="public.menuitems({category: 'SP'})">
-        <div id="specials-tile"><span>Populares</span></div>
-      </a>
-    </div>
-    <div class="col-md-4 col-sm-12 col-xs-12">
-      <a href="https://www.google.com.br/maps/place/Ftec+Faculdades/@-29.6813923,-51.1279316,17z/data=!3m1!4b1!4m5!3m4!1s0x951943ba940a9a5d:0xebe03197a87de9f9!8m2!3d-29.681397!4d-51.1257429" target="_blank">
-        <div id="map-tile">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3483.688947850131!2d-51.22095728544062!3d-29.173837098287695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ea2ffd3b94e23%3A0xd3badaf9fa4dd9c3!2sUniftec+-+Centro+Universit%C3%A1rio!5e0!3m2!1spt-BR!2sbr!4v1480276582256" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-          <span>Mapa</span>
+
+
+
+    <div class="container">
+
+      <div class="text-center">
+
+      </div>      
+      <div ng-repeat="menuCategory in menuCtrl.menuCategories">
+
+        <div class="category_container">
+          <strong>{{menuCategory.name}}</strong>
+        </br>
+        <hr>
+        <div data-ng-repeat="$i in menuCategory.products">
+          <a  ng-click="menuCategory.nome = $i.name; menuCategory.price = $i.price; menuCategory.img_path = $i.img_path; menuCategory.quantidade=0; menuCategory.valor = 0" href="#" data-toggle="modal" data-target="#myModal">
+            <div class="item_container" >
+              <img class="menu_item" src="/images/menu/{{$i.img_path}}" />
+            </br>
+            <span>R${{$i.price}}</span>
+          </br>
+          <strong>{{$i.name}}</strong>
+
         </div>
-      </a>
+      </a>  
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <center><h4 class="modal-title" style="color: black"><strong>{{menuCategory.nome}}</strong></h4></center>
+          </div>
+          <div class="modal-body" style="color: black">
+            <center>
+              <img class="modal_img" src="/images/menu/{{menuCategory.img_path}}" />
+              <div id="malditos_botoes" class="btn-group input-group col-lg-4 " role="group" aria-label="Default button group">
+                <button ng-click="menuCategory.quantidade = menuCategory.quantidade-1; menuCategory.valor = (menuCategory.price * menuCategory.quantidade)" type="button" class="btn btn-default">-</button> 
+                <input type="text" class="form-control meio" value="{{menuCategory.quantidade}}"/> 
+                <button ng-click="menuCategory.quantidade = menuCategory.quantidade+1; menuCategory.valor = (menuCategory.price * menuCategory.quantidade)" type="button" class="btn btn-default">+</button> 
+                <span id="valor_item">R${{menuCategory.valor}}</span>
+              </div>
+            </center>
+          </div>
+          <div class="modal-footer">
+
+            <button id="btn_modal" ng-click = "menuCtrl.valor_total = 500;" type="button" class="btn btn-success" data-dismiss="modal">Comprar</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
+
+
+
+</div>
+</menu-category>
+<div class="col-md-4 col-sm-12 col-xs-12">
+  <a href="https://www.google.com.br/maps/place/Ftec+Faculdades/@-29.6813923,-51.1279316,17z/data=!3m1!4b1!4m5!3m4!1s0x951943ba940a9a5d:0xebe03197a87de9f9!8m2!3d-29.681397!4d-51.1257429" target="_blank">
+    <div id="map-tile">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3483.688947850131!2d-51.22095728544062!3d-29.173837098287695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ea2ffd3b94e23%3A0xd3badaf9fa4dd9c3!2sUniftec+-+Centro+Universit%C3%A1rio!5e0!3m2!1spt-BR!2sbr!4v1480276582256" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <span>Mapa</span>
+    </div>
+  </a>
+</div>
+
+
+
+</div>
+</div>
 </div>

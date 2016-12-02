@@ -11,7 +11,7 @@ function MenuService($http, ApiPath, $q) {
   service.registration = {};
 
   service.getCategories = function () {
-    return $http.get('http://localhost:3000/mercado_convenienza/categories.json').then(function (response) {
+    return $http.get(ApiPath + '/categories.json').then(function (response) {
       return response.data;
     });
   };

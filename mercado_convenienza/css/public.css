@@ -4,6 +4,72 @@
   border: 2px solid #072f03;
 }
 
+.navbar-header{
+  height: 5em;
+}
+
+.conteudo_pg{
+  margin: 2em; 
+}
+
+.img_pagmento{
+  height: 3em;
+  width: 5em;
+  margin: 10px;
+}
+
+#mini_cart{
+  position: relative;
+  top: 15px;
+  font-size: 2em;
+}
+
+.meio{
+  width:47% !important;
+}
+
+.modal_img{
+  border: 2px solid #072f03;
+  height: 10em;
+  width: 10em;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.modal-dialog{
+  width:30% !important;
+}
+.qnt-count{
+  height: 5em;
+  width: 5em;
+}
+
+.category_container{
+  padding: 15px;
+  float: left;
+  width: 100%;
+  display: block;
+}
+
+.menu_item{
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+}
+
+.item_container{
+  float: left;
+  text-align: center;
+  color: black;
+  display: inline;
+  background-color: white;
+  border: 1px solid #072f03;
+
+}
+
 #menu-tile, #specials-tile, #map-tile {
   height: 250px;
   width: 100%;
@@ -153,6 +219,33 @@ h3.menu-item-title {
     width: 360px;
     margin: 0 auto 15px;
   }
+
+  .menu_item{
+        width: 113px;
+    height: 111px;
+  }
+
+  .modal-content{
+    margin-left: 3em;
+  }
+
+  .modal-dialog {
+    width: 80% !important;
+}
+
+#btn_modal{
+      float: left;
+}
+
+#valor_item{
+  float: left;
+  margin-left: 3.2em;;
+}
+
+#malditos_botoes{
+  float: left;
+  margin-left: 2em;
+}
 
   .menu-item-photo {
     margin-right: auto;

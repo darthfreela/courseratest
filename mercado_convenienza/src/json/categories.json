@@ -1,0 +1,58 @@
+[{"id":1,
+  "name":"Legumes e Verduras",
+  "products":[
+		{"name":"coca-cola","img_path":"coca-cola.png","price":"1000"},
+		{"name":"cachaça"},
+		{"name":"peido"}
+	]
+ },
+ {"id":2,
+  "name":"Aves, Carnes e Pescado",
+  "products":[
+		{"name":"coca-cola","img_path":"coca-cola.png","price":"1000"},
+		{"name":"cachaça"},
+		{"name":"peido"}
+	]
+ },
+ {"id":3,
+  "name":"Bebidas sem Alcool",
+  "products":[
+		{"name":"coca-cola","img_path":"coca-cola.png","price":"1.000"},
+		{"name":"cachaça"},
+		{"name":"peido"}
+	]
+ },
+ {"id":4,
+  "name":"Vinhos",
+  "products":[
+		{"name":"coca-cola","img_path":"coca-cola.png","price":"1.000"},
+		{"name":"cachaça"},
+		{"name":"peido"}
+	]
+ },
+ {"id":5,
+  "name":"Laticíneos, Ovos e Congelados",
+  "products":[
+		{"name":"coca-cola","img_path":"coca-cola.png","price":"1.000"},
+		{"name":"cachaça"},
+		{"name":"peido"}
+	]
+ },
+ {"id":6,
+  "name":"Cereais",
+  "products":[
+		{"name":"coca-cola","img_path":"coca-cola.png","price":"1.000"},
+		{"name":"cachaça"},
+		{"name":"peido"}
+	]
+ },
+ {"id":7,
+  "name":"Produtos de Limpeza",
+  "products":[
+		{"name":"coca-cola","img_path":"coca-cola.png","price":"1.000"},
+		{"name":"cachaça"},
+		{"name":"peido"}
+	]
+ }
+
+]

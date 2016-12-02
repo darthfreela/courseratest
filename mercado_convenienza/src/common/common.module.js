@@ -2,7 +2,7 @@
 "use strict";
 
 angular.module('common', [])
-.constant('ApiPath', 'https://klauvi.herokuapp.com')
+.constant('ApiPath', 'http://localhost:3000/src/json')
 .config(config);
 
 config.$inject = ['$httpProvider'];
