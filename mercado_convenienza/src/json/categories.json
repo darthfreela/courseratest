@@ -23,6 +23,7 @@
 		{"name":"Coca-Cola Zero 2L","img_path":"09.jpeg","price":"2.5"},
 		{"name":"Guaraná Antartica Lata","img_path":"10.jpeg","price":"1.5"},
 		{"name":"Pepsi Cola 2L","img_path":"11.jpeg","price":"2.5"}
+	]
  },
  {"id":4,
   "name":"Vinhos",
