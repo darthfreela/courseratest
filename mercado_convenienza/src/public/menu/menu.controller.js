@@ -16,4 +16,9 @@ function MenuController(menuCategories, $rootScope) {
 }
 
 
+
+    alert('oiiii');
+    $('#datetimepicker1').datetimepicker();
+
+
 })();
